@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W-Wave Radio</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content flex">
+                <a class="header__logo" href="#" aria-label="Ссылка на главную страницу сайта">
+                    <img src="img/logo.svg" alt="Логотип компании W-Wave Radio" class="header__image">
+                </a>
+                <nav class="header__nav">
+                    <ul class="header__list list-reset flex">
+                        <li class="header__list-item">
+                            <a href="#podcasts" class="header__list-link">Подкасты</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#broadcasts" class="header__list-link">Передачи</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#guests" class="header__list-link">Гости</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#playlists" class="header__list-link">Плейлисты</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#about-us" class="header__list-link">О нас</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="btn-reset header__btn" aria-label="Кнопка поиска по сайту">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M21 21L16.65 16.65" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container flex hero__gap">
+                <div class="hero-wrapper">
+                    <h1 class="hero__title flex">
+                        <span class="radio">Радио</span>
+                        <span class="wave">W-Wave</span>
+                    </h1>
+                    <p class="hero__descr">
+                        Привет, на&nbsp;связи W-Wave! Раньше мы&nbsp;были изданием, а&nbsp;теперь пробуем себя
+                        в&nbsp;разговорном жанре. Говорим о&nbsp;музыке, политике, истории, науке и&nbsp;культуре.
+                        Здесь, помимо прямого эфира&nbsp;&mdash; архив передач и&nbsp;многое другое:)
+                    </p>
+                    <a href="#" class="hero__link" target="_blank">
+                        Слушать эфир
+                    </a>
+                </div>
+                <picture>
+                    <source media="(max-width: 1024px)" srcset="img/hero(1024).jpg">
+                    <img src="img/hero.jpg" alt="Картинка с микрофоном" aria-hidden="true" class="hero__image">
+                </picture>
+            </div>
+        </section>
+        <section class="podcasts" id="podcasts">
+            <div class="container">
+                <h2 class="podcasts__title section-title">Подкасты</h2>
+                <ul class="podcasts__list list-reset flex">
+                    <li class="podcasts__list-item flex">
+                        <div class="podcasts__item-cover">
+                            <picture>
+                                <source media="(max-width: 393px)" srcset="img/podcasts-1(320).jpg">
+                                <img src="img/podcasts-1.jpg" alt="Обложка подкаста" aria-hidden="true"
+                                    class="podcasts__item-image">
+                            </picture>
+                            <time class="podcasts__item-time" datetime="2024-06-14">
+                                14 июня
+                            </time>
+                        </div>
+                        <div class="podcasts__item-descr">
+                            <span class="podcasts__item-duration">
+                                15:43
+                            </span>
+                            <h3 class="podcasts__item-name">
+                                Европа. XIX век
+                            </h3>
+                            <span class="podcasts__item-podcaster">
+                                Дмитрий Гутенберг
+                            </span>
+                        </div>
+                    </li>
+                    <li class="podcasts__list-item flex">
+                        <div class="podcasts__item-cover">
+                            <picture>
+                                <source media="(max-width: 393px)" srcset="img/podcasts-2(320).jpg">
+                                <img src="img/podcasts-2.jpg" alt="Обложка подкаста" aria-hidden="true"
+                                class="podcasts__item-image">
+                                </picture>
+                            <time class="podcasts__item-time" datetime="2024-06-11">
+                                11 июня
+                            </time>
+                        </div>
+                        <div class="podcasts__item-descr">
+                            <span class="podcasts__item-duration">
+                                5:32
+                            </span>
+                            <h3 class="podcasts__item-name">
+                                О музыке
+                            </h3>
+                            <span class="podcasts__item-podcaster">
+                                Дмитрий Гутенберг
+                            </span>
+                        </div>
+                    </li>
+                    <li class="podcasts__list-item flex">
+                        <div class="podcasts__item-cover">
+                            <picture>
+                                <source media="(max-width: 393px)" srcset="img/podcasts-3(320).jpg">
+                                <img src="img/podcasts-3.jpg" alt="Обложка подкаста" aria-hidden="true"
+                                class="podcasts__item-image">
+                                </picture>
+                            <time class="podcasts__item-time" datetime="2024-06-08">
+                                8 июня
+                            </time>
+                        </div>
+                        <div class="podcasts__item-descr">
+                            <span class="podcasts__item-duration">
+                                8:54
+                            </span>
+                            <h3 class="podcasts__item-name">
+                                Люди сегодня
+                            </h3>
+                            <span class="podcasts__item-podcaster">
+                                Анна Васильева
+                            </span>
+                        </div>
+                    </li>
+                    <li class="podcasts__list-item flex">
+                        <div class="podcasts__item-cover">
+                            <picture>
+                                <source media="(max-width: 393px)" srcset="img/podcasts-4(320).jpg">
+                                <img src="img/podcasts-4.jpg" alt="Обложка подкаста" aria-hidden="true"
+                                class="podcasts__item-image">
+                                </picture>
+                            <time class="podcasts__item-time" datetime="2024-06-05">
+                                5 июня
+                            </time>
+                        </div>
+                        <div class="podcasts__item-descr">
+                            <span class="podcasts__item-duration">
+                                9:04
+                            </span>
+                            <h3 class="podcasts__item-name">
+                                Хэллоу, Африка!
+                            </h3>
+                            <span class="podcasts__item-podcaster">
+                                Пётр Дмитриевский
+                            </span>
+                        </div>
+                    </li>
+                    <li class="podcasts__list-item flex">
+                        <div class="podcasts__item-cover">
+                            <picture>
+                                <source media="(max-width: 393px)" srcset="img/podcasts-5(320).jpg">
+                                <img src="img/podcasts-5.jpg" alt="Обложка подкаста" aria-hidden="true"
+                                class="podcasts__item-image">
+                                </picture>
+                            <time class="podcasts__item-time" datetime="2024-06-02">
+                                2 июня
+                            </time>
+                        </div>
+                        <div class="podcasts__item-descr">
+                            <span class="podcasts__item-duration">
+                                7:03
+                            </span>
+                            <h3 class="podcasts__item-name">
+                                Обо всём
+                            </h3>
+                            <span class="podcasts__item-podcaster">
+                                Пётр Дмитриевский
+                            </span>
+                        </div>
+                    </li>
+                    <li class="podcasts__list-item flex">
+                        <div class="podcasts__item-cover">
+                            <picture>
+                                <source media="(max-width: 393px)" srcset="img/podcasts-6(320).jpg">
+                                <img src="img/podcasts-6.jpg" alt="Обложка подкаста" aria-hidden="true"
+                                class="podcasts__item-image">
+                                </picture>
+                            <time class="podcasts__item-time" datetime="2024-05-28">
+                                28 мая
+                            </time>
+                        </div>
+                        <div class="podcasts__item-descr">
+                            <span class="podcasts__item-duration">
+                                9:15
+                            </span>
+                            <h3 class="podcasts__item-name">
+                                Физика цвета
+                            </h3>
+                            <span class="podcasts__item-podcaster">
+                                Татьяна Флеганова
+                            </span>
+                        </div>
+                    </li>
+                    <li class="podcasts__list-item flex">
+                        <div class="podcasts__item-cover">
+                            <picture>
+                                <source media="(max-width: 393px)" srcset="img/podcasts-7(320).jpg">
+                                <img src="img/podcasts-7.jpg" alt="Обложка подкаста" aria-hidden="true"
+                                class="podcasts__item-image">
+                                </picture>
+                            <time class="podcasts__item-time" datetime="2024-05-22">
+                                22 мая
+                            </time>
+                        </div>
+                        <div class="podcasts__item-descr">
+                            <span class="podcasts__item-duration">
+                                16:04
+                            </span>
+                            <h3 class="podcasts__item-name">
+                                Источник звука
+                            </h3>
+                            <span class="podcasts__item-podcaster">
+                                Пётр Дмитриевский
+                            </span>
+                        </div>
+                    </li>
+                    <li class="podcasts__list-item flex">
+                        <div class="podcasts__item-cover">
+                            <picture>
+                                <source media="(max-width: 393px)" srcset="img/podcasts-8(320).jpg">
+                                <img src="img/podcasts-8.jpg" alt="Обложка подкаста" aria-hidden="true"
+                                class="podcasts__item-image">
+                                </picture>
+                            <time class="podcasts__item-time" datetime="2024-05-18">
+                                18 мая
+                            </time>
+                        </div>
+                        <div class="podcasts__item-descr">
+                            <span class="podcasts__item-duration">
+                                6:55
+                            </span>
+                            <h3 class="podcasts__item-name">
+                                Правила этикета
+                            </h3>
+                            <span class="podcasts__item-podcaster">
+                                Татьяна Флеганова
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="broadcasts" id="broadcasts">
+            <div class="container flex gap">
+                <h2 class="broadcasts__title visually-hidden">
+                    Передачи
+                </h2>
+                <div class="flex left-part">
+                    <h2 class="broadcasts__title">
+                        Передачи
+                    </h2>
+                    <div class="bottom">
+                        <a href="#" class="broadcasts__link" aria-label="Архив с передачами" target="_blank">
+                            Архив
+                        </a>
+                        <p class="broadcasts__descr">
+                            В&nbsp;архив попадают все передачи, которые вы&nbsp;пропустили! Enjoy:)
+                        </p>
+                    </div>
+                </div>
+                <ul class="list-reset broadcasts__list flex">
+                    <li class="broadcasts__list-item flex">
+                        <picture>
+                            <source media="(max-width:393px)" srcset="img/broadcasts-1(320).jpg">
+                            <img src="img/broadcasts-1.jpg" alt="Обложка передачи" aria-hidden="true">
+                        </picture>
+                        <div class="broadcasts__content flex">
+                            <h3 class="broadcasts__item-title">
+                                О&nbsp;людях и&nbsp;книгах
+                            </h3>
+                            <span class="broadcasts__item-date">
+                                Анонсируется отдельно
+                            </span>
+                            <a href="#" class="broadcasts__item-link" aria-label="Подробнее о передаче" target="_blank">
+                                Подробнее
+                                <div class="link-arrow">
+                                    <svg width="28" height="12" viewBox="0 0 28 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="broadcasts__list-item flex">
+                        <picture>
+                            <source media="(max-width:393px)" srcset="img/broadcasts-2(320).jpg">
+                            <img src="img/broadcasts-2.jpg" alt="Обложка передачи" aria-hidden="true">
+                        </picture>
+                        <div class="broadcasts__content flex">
+                            <h3 class="broadcasts__item-title">
+                                Графомания&nbsp;td
+                            </h3>
+                            <span class="broadcasts__item-date">
+                                По&nbsp;понедельникам в&nbsp;10:00
+                            </span>
+                            <a href="#" class="broadcasts__item-link" aria-label="Подробнее о передаче" target="_blank">
+                                Подробнее
+                                <div class="link-arrow">
+                                    <svg width="28" height="12" viewBox="0 0 28 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="broadcasts__list-item flex">
+                        <picture>
+                            <source media="(max-width:393px)" srcset="img/broadcasts-3(320).jpg">
+                            <img src="img/broadcasts-3.jpg" alt="Обложка передачи" aria-hidden="true">
+                        </picture>
+                            <div class="broadcasts__content flex">
+                            <h3 class="broadcasts__item-title">
+                                Не&nbsp;Рим, не&nbsp;Троя
+                            </h3>
+                            <span class="broadcasts__item-date">
+                                По&nbsp;вторникам в&nbsp;12:00
+                            </span>
+                            <a href="#" class="broadcasts__item-link" aria-label="Подробнее о передаче" target="_blank">
+                                Подробнее
+                                <div class="link-arrow">
+                                    <svg width="28" height="12" viewBox="0 0 28 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="broadcasts__list-item flex">
+                        <picture>
+                            <source media="(max-width:393px)" srcset="img/broadcasts-4(320).jpg">
+                            <img src="img/broadcasts-4.jpg" alt="Обложка передачи" aria-hidden="true">
+                        </picture>
+                        <div class="broadcasts__content flex">
+                            <h3 class="broadcasts__item-title">
+                                Эрудит
+                            </h3>
+                            <span class="broadcasts__item-date">
+                                По&nbsp;пятницам в&nbsp;17:00
+                            </span>
+                            <a href="#" class="broadcasts__item-link" aria-label="Подробнее о передаче" target="_blank">
+                                Подробнее
+                                <div class="link-arrow">
+                                    <svg width="28" height="12" viewBox="0 0 28 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="broadcasts__list-item flex">
+                        <picture>
+                            <source media="(max-width:393px)" srcset="img/broadcasts-5(320).jpg">
+                            <img src="img/broadcasts-5.jpg" alt="Обложка передачи" aria-hidden="true">
+                        </picture>
+                        <div class="broadcasts__content flex">
+                            <h3 class="broadcasts__item-title">
+                                Тонкости эпох
+                            </h3>
+                            <span class="broadcasts__item-date">
+                                По&nbsp;субботам в&nbsp;10:00
+                            </span>
+                            <a href="#" class="broadcasts__item-link" aria-label="Подробнее о передаче" target="_blank">
+                                Подробнее
+                                <div class="link-arrow">
+                                    <svg width="28" height="12" viewBox="0 0 28 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="broadcasts__list-item flex">
+                        <picture>
+                            <source media="(max-width:393px)" srcset="img/broadcasts-6(320).jpg">
+                            <img src="img/broadcasts-6.jpg" alt="Обложка передачи" aria-hidden="true">
+                        </picture>
+                        <div class="broadcasts__content flex">
+                            <h3 class="broadcasts__item-title">
+                                Живые мысли
+                            </h3>
+                            <span class="broadcasts__item-date">
+                                По&nbsp;воскресеньям в&nbsp;15:30
+                            </span>
+                            <a href="#" class="broadcasts__item-link" aria-label="Подробнее о передаче" target="_blank">
+                                Подробнее
+                                <div class="link-arrow">
+                                    <svg width="28" height="12" viewBox="0 0 28 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="guests" id="guests">
+            <div class="container">
+                <h2 class="guests__title section-title">
+                    Гости
+                </h2>
+                <span class="visitors">
+                    У&nbsp;нас бывают:
+                </span>
+                <p class="guests__descr">
+                    Блогеры, арт-критики и&nbsp;деятели искусства, музыканты, молодые учёные и&nbsp;
+                    люди науки, историки, филологи и&nbsp;много других интересных гостей!
+                </p>
+                <ul class="list-reset guests__list flex">
+                    <li class="guests__list-item flex">
+                        <img src="img/guests-1.jpg" alt="Фото гостя" class="guests__item-image" aria-hidden="true">
+                        <div class="guests__item-content">
+                            <div class="guests__item-text">
+                                <h3 class="guests__item-title">
+                                    Ольга Мартынова
+                                </h3>
+                                <p class="guests__item-descr">
+                                    Российский искусствовед, арт-критик, куратор выставок, дизайнер, кандидат
+                                    культурологии.
+                                    Арт-критик газеты &laquo;Коммерсантъ&raquo;. Ведёт активную блогерскую деятельность
+                                    как
+                                    куратор музея &laquo;Гараж&raquo;, коим является с&nbsp;2016&nbsp;года.
+                                </p>
+                            </div>
+                            <a href="#" target="_blank" class="guests__item-link" aria-label="Прослушать все эфиры с гостем">
+                                Эфиры с&nbsp;гостем
+                            </a>
+                        </div>
+                    </li>
+                    <li class="guests__list-item flex">
+                        <img src="img/guests-2.jpg" alt="Фото гостя" class="guests__item-image" aria-hidden="true">
+                        <div class="guests__item-content">
+                            <div class="guests__item-text">
+                                <h3 class="guests__item-title">
+                                    Денис Гришин
+                                </h3>
+                                <p class="guests__item-descr">
+                                    Однозначно, элементы политического процесса являются только методом политического
+                                    участия
+                                    и&nbsp;смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой
+                                    неузнаваемости,
+                                    из-за чего возрастает их&nbsp;статус бесполезности.
+                                </p>
+                            </div>
+                            <a href="#" target="_blank" class="guests__item-link" aria-label="Прослушать все эфиры с гостем">
+                                Эфиры с&nbsp;гостем
+                            </a>
+                        </div>
+                    </li>
+                    <li class="guests__list-item flex">
+                        <img src="img/guests-3.jpg" alt="Фото гостя" class="guests__item-image" aria-hidden="true">
+                        <div class="guests__item-content">
+                            <div class="guests__item-text">
+                                <h3 class="guests__item-title">
+                                    Ольга Мартынова
+                                </h3>
+                                <p class="guests__item-descr">
+                                    С&nbsp;другой стороны, высококачественный прототип будущего проекта выявляет срочную
+                                    потребность
+                                    дальнейших направлений развития. В&nbsp;рамках спецификации современных стандартов,
+                                    реплицированные
+                                    с&nbsp;зарубежных источников.
+                                </p>
+                            </div>
+                            <a href="#" target="_blank" class="guests__item-link" aria-label="Прослушать все эфиры с гостем">
+                                Эфиры с&nbsp;гостем
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="playlists" id="playlists">
+            <div class="container flex playlists__gap">
+                <div class="left">
+                    <h2 class="playlists__title section-title">
+                        Плейлисты
+                    </h2>
+                    <p class="playlists__text">
+                        Раздел &laquo;Плейлисты&raquo; может содержать информацию, не&nbsp;предназначенную для
+                        несовершеннолетних
+                    </p>
+                    <span class="playlists__copy">
+                        &copy;&nbsp;2021&nbsp;l W-Wave
+                    </span>
+                </div>
+                <ul class="playlists__list list-reset flex">
+                    <li class="playlists__list-item russian-flag">
+                        <img src="img/playlists-1.jpg" alt="Фото исполнителя" class="playlists__item-image" aria-hidden="true">
+                        <div class="playlists-content">
+                            <h3 class="playlists__item-title">
+                                Ploho
+                            </h3>
+                            <span class="playlists__item-descr">
+                                3&nbsp;последних альбома
+                            </span>
+                        </div>
+                    </li>
+                    <li class="playlists__list-item russian-flag">
+                        <img src="img/playlists-2.jpg" alt="Фото исполнителя" class="playlists__item-image" aria-hidden="true">
+                        <div class="playlists-content">
+                            <h3 class="playlists__item-title">
+                                Molchat Doma
+                            </h3>
+                            <span class="playlists__item-descr">
+                                Все песни
+                            </span>
+                        </div>
+                    </li>
+                    <li class="playlists__list-item russian-flag">
+                        <img src="img/playlists-3.jpg" alt="Фото исполнителя" class="playlists__item-image" aria-hidden="true">
+                        <div class="playlists-content">
+                            <h3 class="playlists__item-title">
+                                Motorama
+                            </h3>
+                            <span class="playlists__item-descr">
+                                Все синглы
+                            </span>
+                        </div>
+                    </li>
+                    <li class="playlists__list-item russian-flag">
+                        <img src="img/playlists-4.jpg" alt="Фото исполнителя" class="playlists__item-image" aria-hidden="true">
+                        <div class="playlists-content">
+                            <h3 class="playlists__item-title">
+                                Human Tetris
+                            </h3>
+                            <span class="playlists__item-descr">
+                                3&nbsp;последних альбома
+                            </span>
+                        </div>
+                    </li>
+                    <li class="playlists__list-item russian-flag">
+                        <img src="img/playlists-5.jpg" alt="Фото исполнителя" class="playlists__item-image" aria-hidden="true">
+                        <div class="playlists-content">
+                            <h3 class="playlists__item-title">
+                                Буерак
+                            </h3>
+                            <span class="playlists__item-descr">
+                                Все&nbsp;EP
+                            </span>
+                        </div>
+                    </li>
+                    <li class="playlists__list-item russian-flag">
+                        <img src="img/playlists-6.jpg" alt="Фото исполнителя" class="playlists__item-image" aria-hidden="true">
+                        <div class="playlists-content">
+
+                            <h3 class="playlists__item-title">
+                                Июльские Дни
+                            </h3>
+                            <span class="playlists__item-descr">
+                                Альбом &laquo;Колокол&raquo;
+                            </span>
+                        </div>
+                    </li>
+                    <li class="playlists__list-item uk-flag">
+                        <img src="img/playlists-7.jpg" alt="Фото исполнителя" class="playlists__item-image" aria-hidden="true">
+                        <div class="playlists-content">
+                            <h3 class="playlists__item-title">
+                                Joy Division
+                            </h3>
+                            <span class="playlists__item-descr">
+                                Лучшее за&nbsp;всё время
+                            </span>
+                        </div>
+                    </li>
+                    <li class="playlists__list-item uk-flag">
+                        <img src="img/playlists-8.jpg" alt="Фото исполнителя" class="playlists__item-image" aria-hidden="true">
+                        <div class="playlists-content">
+                            <h3 class="playlists__item-title">
+                                The Cure
+                            </h3>
+                            <span class="playlists__item-descr">
+                                Лучшее за&nbsp;всё время
+                            </span>
+                        </div>
+                    </li>
+                    <li class="playlists__list-item uk-flag">
+                        <img src="img/playlists-9.jpg" alt="Фото исполнителя" class="playlists__item-image" aria-hidden="true">
+                        <div class="playlists-content">
+                            <h3 class="playlists__item-title">
+                                The Smiths
+                            </h3>
+                            <span class="playlists__item-descr">
+                                Период 1984&ndash;1988
+                            </span>
+                        </div>
+                    </li>
+                    <li class="playlists__list-item uk-flag">
+                        <img src="img/playlists-10.jpg" alt="Фото исполнителя" class="playlists__item-image" aria-hidden="true">
+                        <div class="playlists-content">
+                            <h3 class="playlists__item-title">
+                                New Order
+                            </h3>
+                            <span class="playlists__item-descr">
+                                Хиты
+                            </span>
+                        </div>
+                    </li>
+                    <li class="playlists__list-item uk-flag">
+                        <img src="img/playlists-11.jpg" alt="Фото исполнителя" class="playlists__item-image" aria-hidden="true">
+                        <div class="playlists-content">
+                            <h3 class="playlists__item-title">
+                                Bauhaus
+                            </h3>
+                            <span class="playlists__item-descr">
+                                Все синглы
+                            </span>
+                        </div>
+                    </li>
+                    <li class="playlists__list-item uk-flag">
+                        <img src="img/playlists-12.jpg" alt="Фото исполнителя" class="playlists__item-image" aria-hidden="true">
+                        <div class="playlists-content">
+                            <h3 class="playlists__item-title">
+                                Gang Of&nbsp;Four
+                            </h3>
+                            <span class="playlists__item-descr">
+                                3&nbsp;последних альбома
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="product">
+            <div class="container flex product__gap">
+                <svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" class="product__new">
+                    <path d="M151.975 89.6127C156.622 84.0465 156.622 75.9535 151.975 70.3873L146.225 63.4986C143.682 60.4529 142.45 56.5239 142.797 52.5716L143.592 43.5358C144.244 36.1224 139.362 29.3519 132.122 27.629L124.848 25.8981C120.783 24.9308 117.306 22.3119 115.254 18.6722L111.455 11.933C107.645 5.17474 99.3097 2.43713 92.2345 5.62002L86.1539 8.35543C82.2402 10.116 77.7598 10.116 73.8461 8.35543L67.7488 5.61247C60.6805 2.43274 52.3537 5.1615 48.5383 11.9079L44.7596 18.5893C42.6991 22.2327 39.21 24.8495 35.1354 25.8073L27.918 27.5038C20.6595 29.21 15.7563 35.9887 16.4078 43.4165L17.2057 52.5128C17.5514 56.4548 16.3255 60.3737 13.7949 63.4159L7.99347 70.3904C3.36298 75.9571 3.37009 84.037 8.01036 89.5956L13.7767 96.503C16.3185 99.5478 17.5509 103.475 17.2043 107.426L16.4046 116.543C15.7545 123.955 20.6362 130.724 27.8748 132.446L35.1634 134.181C39.2214 135.147 42.6941 137.758 44.7475 141.389L48.5209 148.061C52.3436 154.821 60.6929 157.545 67.7664 154.341L73.8322 151.594C77.7536 149.818 82.249 149.812 86.1749 151.578L92.2513 154.311C99.3195 157.491 107.646 154.762 111.462 148.016L115.252 141.313C117.306 137.682 120.779 135.07 124.837 134.105L132.122 132.371C139.362 130.648 144.244 123.878 143.592 116.464L142.797 107.428C142.45 103.476 143.682 99.5471 146.225 96.5014L151.975 89.6127Z" fill="#F0D288"/>
+                    <path d="M55.9564 118.705L41.1423 100.411L44.3404 97.8209L46.0538 99.9368C45.9765 97.1772 47.0482 94.8982 49.2691 93.0998C51.6381 91.1814 54.0782 90.5922 56.5895 91.3322C58.1331 91.7852 59.8093 93.1285 61.6179 95.362L70.792 106.691L67.5939 109.281L58.4912 98.0399C57.2775 96.5411 56.0919 95.6522 54.9343 95.3731C53.5393 95.043 52.1755 95.4174 50.843 96.4965C49.4809 97.5995 48.7808 98.945 48.7428 100.533C48.6874 102.281 49.5759 104.286 51.4083 106.549L59.1545 116.115L55.9564 118.705Z" fill="#292E39"/>
+                    <path d="M85.5394 84.6034L89.3825 83.8999C89.7125 85.579 89.7547 87.175 89.5088 88.6878C89.0347 91.5534 87.5983 93.9574 85.1997 95.8997C82.7124 97.9139 79.923 98.8589 76.8316 98.7347C73.746 98.5571 70.9181 96.8814 68.3479 93.7075C66.0871 90.9157 65.0185 87.9613 65.1421 84.8444C65.2715 81.6741 66.6983 78.9859 69.4226 76.7798C72.5022 74.286 75.7311 73.5203 79.1091 74.4829C81.7807 75.2391 84.2144 77.0637 86.4101 79.9569L72.0632 91.5748C73.5921 93.4023 75.3832 94.4335 77.4365 94.6684C79.4899 94.9033 81.3309 94.3613 82.9596 93.0425C84.4105 91.8675 85.3121 90.4076 85.6642 88.6627C85.9222 87.2859 85.8806 85.9328 85.5394 84.6034ZM70.1435 88.7501L80.9814 79.9737C79.5488 78.7495 77.984 78.1189 76.2871 78.082C74.596 77.9916 73.0693 78.498 71.7072 79.601C70.3747 80.6801 69.559 82.0948 69.2604 83.8451C68.9675 85.542 69.2619 87.177 70.1435 88.7501Z" fill="#292E39"/>
+                    <path d="M80.7261 68.3563L84.2795 65.4788L99.8094 73.4857L94.3749 54.9681L111.314 64.1698L106.755 47.2786L110.308 44.4011L117.008 71.383L100.256 62.3216L105.637 80.591L80.7261 68.3563Z" fill="#292E39"/>
+                </svg>
+                <picture>
+                    <source srcset="img/product(320).png" media="(max-width: 600px)">
+                    <source srcset="img/product(768).png" media="(max-width: 768px)">
+                    <source srcset="img/product(1024).png" media="(max-width: 1210px)">
+                    <img src="img/product.png" alt="Фото радиоприемника-колонки W-Wave" class="product__image" aria-hidden="true">
+                </picture>
+                <div class="product__content">
+                    <h2 class="product__title section-title">
+                        Будь с&nbsp;нами на&nbsp;одной волне!
+                    </h2>
+                    <p class="product__descr">
+                        Друзья, рады представить вам продукт нашего производства! Да-да, несмотря на&nbsp;то, что
+                        мы&nbsp;только начали
+                        свой путь радиовещателей, нам хочется, чтобы вы&nbsp;могли какследует нас расслышать:)
+                    </p>
+                    <p class="product__descr margin">
+                        Итак, встречайте! Портативный радиоприёмник-колонка W-Wave 1.0&nbsp;xm. Тщательный подбор всех
+                        делатей,
+                        ручная сборка, качественный звук. Пока доступно только 60&nbsp;штук в&nbsp;3&nbsp;цветах,
+                        но&nbsp;мы&nbsp;активно
+                        трудимся над новыми партиями и&nbsp;дизайном. Спешите приобрести!
+                    </p>
+                    <span class="product__price">
+                        2&nbsp;800&nbsp;₽
+                    </span>
+                    <a href="#" class="product__link" aria-label="Купить на Яндекс Маркет" target="_blank">
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="yandex">
+                            <g clip-path="url(#clip0_156504_385)">
+                                <path
+                                    d="M10.5 20C16.0228 20 20.5 15.5228 20.5 9.99998C20.5 4.47714 16.0228 0 10.5 0C4.97724 0 0.5 4.47714 0.5 9.99998C0.5 15.5228 4.97724 20 10.5 20Z"
+                                    />
+                                <path class="stroke"
+                                    d="M17.4385 4.54391L13.7295 3.17676L8.3957 10.8637L8.92677 7.3751L6.02058 5.68219L0.67395 12.1141C0.924269 13.3858 1.4102 14.5718 2.08387 15.6239L5.27373 11.7711L4.09993 16.2962L7.73707 17.6271L13.1408 9.8464L11.9569 14.2958L14.9033 16.0179L20.558 10.3174C20.5592 10.2534 20.5599 10.1889 20.5599 10.1246C20.5599 8.78258 20.3017 7.50132 19.8329 6.32896L16.5482 9.6538L17.4385 4.54391Z"
+                                    />
+                            </g>
+                            <defs>
+                                <clippath id="clip0_156504_385">
+                                    <rect x="0.5" width="20" height="20" rx="10" fill="white" />
+                                </clippath>
+                            </defs>
+                        </svg>
+                        Купить на&nbsp;Яндекс.Маркет
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="about-us" id="about-us">
+            <div class="container">
+                <div class="about-us__content">
+                    <h2 class="about-us__title section-title">
+                        О&nbsp;нас
+                    </h2>
+                    <span class="about-us__text">
+                        Приём-приём! Как слышно? Мы&nbsp;уже в&nbsp;эфире? Отлично, поехали!
+                    </span>
+                    <p class="about-us__descr">
+                        Друзья, мы&nbsp;будем очень рады, если вы&nbsp;поможете стать нам лучше. Нам важен каждый
+                        слушатель,
+                        поэтому вы&nbsp;можете поделиться обратной связью о&nbsp;наших предеачах, темах, подборках
+                        и&nbsp;вообще обо всём!
+                        Это можно сделать либо написав нам в&nbsp;форме ниже, либо кликнув на&nbsp;наши соцсети
+                        в&nbsp;подвале сайта. Спасибо!
+                        Услышимся!:)
+                    </p>
+                </div>
+                <ul class="list-reset about-us__list flex">
+                    <li class="about-us__list-item">
+                        <picture>
+                            <source media="(max-width:393px)" srcset="img/about-us-1(320).jpg">
+                            <source srcset="img/about-us-1(768).jpg" media="(max-width :1014px)">
+                            <source srcset="img/about-us-1(1024).jpg" media="(max-width :1210px)">
+                            <img src="img/about-us-1.jpg" alt="Портрет Дмитрия Гутенберга" aria-hidden="true">
+                        </picture>
+                        <div class="about-us__item-descr">
+                            <h3 class="about-us__item-title">
+                                Дмитрий Гутенберг
+                            </h3>
+                            <span class="about-us__item-text">
+                                Эксперт (ну, почти) по&nbsp;всем вопросам (почти)
+                            </span>
+                        </div>
+                    </li>
+                    <li class="about-us__list-item">
+                        <picture>
+                            <source media="(max-width:393px)" srcset="img/about-us-2(320).jpg">
+                            <source srcset="img/about-us-2(768).jpg" media="(max-width :1014px)">
+                            <source srcset="img/about-us-2(1024).jpg" media="(max-width :1210px)">
+                            <img src="img/about-us-2.jpg" alt="Портрет Анны Васильевой" aria-hidden="true">
+                        </picture>
+                        <div class="about-us__item-descr">
+                            <h3 class="about-us__item-title">
+                                Анна Васильева
+                            </h3>
+                            <span class="about-us__item-text">
+                                Как я&nbsp;здесь оказалась? А&nbsp;главное&nbsp;&mdash; зачем?
+                            </span>
+                        </div>
+                    </li>
+                    <li class="about-us__list-item">
+                        <picture>
+                            <source media="(max-width:393px)" srcset="img/about-us-3(320).jpg">
+                            <source srcset="img/about-us-3(768).jpg" media="(max-width :1014px)">
+                            <source srcset="img/about-us-3(1024).jpg" media="(max-width :1210px)">
+                            <img src="img/about-us-3.jpg" alt="Портрет Петра Дмитриевского" aria-hidden="true">
+                        </picture>
+                        <div class="about-us__item-descr">
+                            <h3 class="about-us__item-title">
+                                Пётр Дмитриевский
+                            </h3>
+                            <span class="about-us__item-text">
+                                Господа! Внимание! Благодарю за&nbsp;внимание!
+                            </span>
+                        </div>
+                    </li>
+                    <li class="about-us__list-item">
+                        <picture>
+                            <source media="(max-width:393px)" srcset="img/about-us-4(320).jpg">
+                            <source srcset="img/about-us-4(768).jpg" media="(max-width :1014px)">
+                            <source srcset="img/about-us-4(1024).jpg" media="(max-width :1210px)">
+                            <img src="img/about-us-4.jpg" alt="Портрет Татьяны Флегановой" aria-hidden="true">
+                        </picture>
+                        <div class="about-us__item-descr">
+                            <h3 class="about-us__item-title">
+                                Татьяна Флеганова
+                            </h3>
+                            <span class="about-us__item-text">
+                                Одна я&nbsp;в&nbsp;пальто стою красивая, а&nbsp;вокруг...
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+                <form action="#" method="post" class="form flex">
+                    <textarea name="comment" placeholder="Что скажете?" class="form__textarea" aria-label="Оставьте сообщение"></textarea>
+                    <div class="form__bottom flex">
+                        <input type="text" name="name" id="name" placeholder="Имя" required class="form__input" aria-label="Введите ваше имя">
+                        <input type="email" name="email" id="mail" required placeholder="Email" class="form__input" aria-label="Введите вашу электронную почту">
+                    </div>
+                    <button class="form__btn btn-reset" aria-label="Отправить сообщение">
+                        Отправить
+                    </button>
+                    <label for="i" class="form__checkbox">
+                        <input id="i" type="checkbox" required class="form__checkbox-input">
+                        <span class="form__checkbox-text" aria-label="Поставьте галочку чтобы разрешить обработку персональных данных">Согласен на&nbsp;обработку персональных данных</span>
+                    </label>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top flex">
+                <div class="footer__left">
+                    <a href="#" class="footer__logo" aria-label="Ссылка на главную страницу сайта">
+                        <img src="img/footer-logo.svg" alt="Логотип компании W-Wave">
+                    </a>
+                    <ul class="list-reset social flex">
+                        <li class="social__item">
+                            <a href="#" class="social__link" aria-label="Ссылка на ютуб компании" target="_blank">
+                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none" class="yt"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.543 2.498C20 4.28 20 8 20 8C20 8 20 11.72 19.543 13.502C19.289 14.487 18.546 15.262 17.605 15.524C15.896 16 10 16 10 16C10 16 4.107 16 2.395 15.524C1.45 15.258 0.708 14.484 0.457 13.502C2.98023e-08 11.72 0 8 0 8C0 8 2.98023e-08 4.28 0.457 2.498C0.711 1.513 1.454 0.738 2.395 0.476C4.107 -1.78814e-07 10 0 10 0C10 0 15.896 -1.78814e-07 17.605 0.476C18.55 0.742 19.292 1.516 19.543 2.498ZM8 11.5L14 8L8 4.5V11.5Z"
+                                        />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link" aria-label="Ссылка на одноклассники компании" target="_blank">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" class="ok"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.23378 6.14624C8.23378 7.0928 9.05694 7.86023 10.0724 7.86023C11.088 7.86023 11.9111 7.0928 11.9111 6.14624C11.9111 5.19968 11.088 4.43231 10.0724 4.43231C9.05694 4.43231 8.23378 5.19968 8.23378 6.14624Z"
+                                        />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6 0C2.68629 0 0 2.68629 0 6V14C0 17.3137 2.68629 20 6 20H14C17.3137 20 20 17.3137 20 14V6C20 2.68629 17.3137 0 14 0H6ZM5.62436 6.14617C5.62436 3.85633 7.61571 2 10.0724 2C12.5292 2 14.5206 3.85633 14.5206 6.14617C14.5206 8.43606 12.5292 10.2925 10.0724 10.2925C7.61571 10.2925 5.62436 8.43606 5.62436 6.14617ZM14.5472 12.4252C14.4907 12.4674 13.4236 13.2535 11.6427 13.5916L14.3307 16.0748C14.8034 16.5147 14.804 17.2285 14.3321 17.6691C13.8602 18.1097 13.0946 18.1104 12.6216 17.6704L10.012 15.3016L7.64177 17.6552C7.4046 17.8846 7.08805 18 6.77109 18C6.46897 18 6.16645 17.8952 5.93169 17.6842C5.45075 17.252 5.43691 16.5384 5.90062 16.0902L8.4519 13.6048C6.62134 13.2746 5.51009 12.468 5.45295 12.4252C4.93171 12.0357 4.84811 11.3262 5.26591 10.8404C5.6839 10.3547 6.44492 10.2767 6.96616 10.6662C6.97719 10.6744 8.13936 11.4883 10.012 11.4895C11.8847 11.4883 13.0228 10.6744 13.0338 10.6662C13.5551 10.2767 14.3163 10.3547 14.7341 10.8404C15.1519 11.3262 15.0683 12.0357 14.5472 12.4252Z"
+                                        />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link" aria-label="Ссылка на вконтакте компании" target="_blank">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" class="vk"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0 6C0 2.68652 2.68652 0 6 0H14C17.3135 0 20 2.68652 20 6V14C20 17.3135 17.3135 20 14 20H6C2.68652 20 0 17.3135 0 14V6ZM15.3438 11.4473C15.7139 11.7778 16.0845 12.1089 16.4121 12.4795C16.5415 12.626 16.6665 12.7754 16.7769 12.9346C16.835 13.0181 16.8892 13.104 16.938 13.1934C17.0425 13.3848 17.0439 13.5859 16.9727 13.7383C16.9058 13.8809 16.7754 13.981 16.606 13.9917L14.4209 13.9912C13.8569 14.0356 13.4077 13.8208 13.0293 13.4575C12.7271 13.1675 12.4468 12.8584 12.1558 12.5586C12.0366 12.4355 11.9116 12.3198 11.7622 12.2285C11.5962 12.1265 11.4419 12.0991 11.3086 12.1455C11.2031 12.1821 11.1104 12.2656 11.0352 12.3955C10.8613 12.6938 10.8213 13.0244 10.8047 13.3564C10.7812 13.8418 10.6255 13.9688 10.1089 13.9917C9.00439 14.0405 7.95654 13.8823 6.98242 13.3574C6.12305 12.8945 5.45801 12.2417 4.87842 11.502C3.75 10.0601 2.88574 8.47754 2.10938 6.84912C1.93457 6.48242 2.0625 6.28662 2.4917 6.27881C3.20459 6.26611 3.91797 6.26758 4.63086 6.27832C4.9209 6.28271 5.11279 6.43896 5.22461 6.69727C5.60986 7.59082 6.08203 8.44092 6.67432 9.229L6.78369 9.37207C6.90918 9.53174 7.04541 9.68262 7.22217 9.79688C7.4751 9.96045 7.66797 9.90625 7.7876 9.64014C7.86377 9.4707 7.89697 9.28955 7.91357 9.1084C7.97021 8.4873 7.97705 7.86621 7.87891 7.24756C7.81787 6.86035 7.58643 6.61035 7.17725 6.53711C6.96826 6.49951 6.99902 6.42676 7.10059 6.31445C7.27637 6.12061 7.44141 6.00049 7.771 6.00049L10.2397 6C10.6284 6.07178 10.7158 6.23633 10.7686 6.60596L10.771 9.19092C10.7661 9.33398 10.8472 9.75781 11.1191 9.85107C11.3374 9.91895 11.4814 9.75391 11.6118 9.62402C12.2036 9.03174 12.6255 8.33301 13.0034 7.60986C13.1699 7.29102 13.314 6.96094 13.4536 6.63037C13.5024 6.51562 13.5635 6.42822 13.6455 6.36816C13.7378 6.30029 13.8564 6.26758 14.0117 6.26953L16.3887 6.27246C16.4585 6.27246 16.5298 6.27295 16.5991 6.28418C16.8101 6.31836 16.9404 6.37939 16.9985 6.4834C17.0503 6.57666 17.0439 6.70508 16.9854 6.87939C16.7979 7.43555 16.4399 7.90283 16.0835 8.36768L16.041 8.42334C15.6436 8.94092 15.2202 9.43994 14.8271 9.95996C14.4658 10.4346 14.4941 10.6738 14.9429 11.0864C15.0752 11.208 15.2095 11.3276 15.3438 11.4473Z"
+                                        />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="footer__list list-reset flex">
+                    <li class="footer__list-item">
+                        <a href="" class="footer__item-link">
+                            Подкасты
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="" class="footer__item-link">
+                            Плейлисты
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="" class="footer__item-link">
+                            Новости
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="" class="footer__item-link">
+                            Передачи
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="" class="footer__item-link">
+                            Сетка
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="" class="footer__item-link">
+                            Блоги
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="" class="footer__item-link">
+                            Гости
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="" class="footer__item-link">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="" class="footer__item-link">
+                            Топы
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="footer__copy">
+                    W-WAVE ® 2023
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/focus-visible.js"></script>
+</body>
+
+</html>
